@@ -1,4 +1,3 @@
-
 <div class="row" style="margin-top: 30px">
 
   <div class="card-panel col s8 offset-s2">
@@ -9,17 +8,17 @@
 
       <div class="col s8 offset-s4">
 
-        <button class="green accent-3 btn waves-effect waves-light" type="submit" name="action">INSERIR USUÁRIO
+        <a routerLink="insert-user" class="green accent-3 btn waves-effect waves-light" type="submit" name="action">INSERIR USUÁRIO
           <i class="material-icons right">add</i>
-        </button>
+        </a>
 
-        <button class="orange darken-1 btn waves-effect waves-light" type="submit" name="action" style="margin-left: 10px">ALTERAR USUÁRIO
+        <a class="orange darken-1 btn waves-effect waves-light" type="submit" name="action" style="margin-left: 10px">ALTERAR USUÁRIO
           <i class="material-icons right">edit</i>
-        </button>
+        </a>
 
-        <button class="red darken-1 btn waves-effect waves-light" type="submit" name="action" style="margin-left: 10px">EXCLUIR USUÁRIO
+        <a class="red darken-1 btn waves-effect waves-light" type="submit" name="action" style="margin-left: 10px">EXCLUIR USUÁRIO
           <i class="material-icons right">highlight_off</i>
-        </button>
+        </a>
 
       </div>
 
@@ -27,9 +26,14 @@
 
   </div>
 
-  <div>
+  <div class="row" style="margin-top: 30px">
 
-    
+    <div class="card-panel col s8 offset-s2">
+
+      <router-outlet></router-outlet>
+
+    </div>
+
   </div>
 
 </div>

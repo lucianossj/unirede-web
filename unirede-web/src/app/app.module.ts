@@ -9,20 +9,20 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { UserService } from './user.service';
 import { UsersListComponent } from './users-list/users-list.component';
 import { HomeComponent } from './home/home.component';
-import { UsersRegisterComponent } from './users-register/users-register.component';
+import { UsersModule } from './users-register/users-register.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    UsersListComponent,
-    HomeComponent,
-    UsersRegisterComponent
+    //UsersListComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    routing
+    routing,
+    UsersModule
   ],
   providers: [UserService],
   bootstrap: [AppComponent]
