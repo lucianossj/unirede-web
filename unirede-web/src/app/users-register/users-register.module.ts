@@ -9,6 +9,7 @@ import { InsertUserComponent } from './insert-user/insert-user.component';
 
 import { UsersRoutingModule } from './users-routing.module';
 import { UsersListComponent } from '../users-list/users-list.component';
+import { UpdateUserComponent } from './update-user/update-user.component';
 
 @NgModule({
     imports: [
@@ -23,7 +24,8 @@ import { UsersListComponent } from '../users-list/users-list.component';
     declarations: [
         UsersRegisterComponent,
         InsertUserComponent,
-        UsersListComponent
+        UsersListComponent,
+        UpdateUserComponent
         
     ],
     providers: []

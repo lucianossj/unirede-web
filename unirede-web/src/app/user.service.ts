@@ -16,4 +16,10 @@ export class UserService {
 
   }
 
+  insert(user: any){
+
+    return this.http.post(this.usersURL, user);
+
+  }
+
 }

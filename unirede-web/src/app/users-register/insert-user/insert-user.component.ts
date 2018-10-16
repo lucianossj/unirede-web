@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup } from '@angular/forms';
+
+import { UserService } from '../../user.service';
 
 @Component({
   selector: 'insert-user',
@@ -7,9 +10,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InsertUserComponent implements OnInit {
 
-  constructor() { }
+  users: Array<any>;
+  user: any;
+
+  constructor(private service: UserService) { }
 
   ngOnInit() {
+
+    this.user = {};
+
+  }
+
+  insert(frm: FormGroup){
+
+    console.log(frm.value);
+
+    this.service.insert(this.user).subscribe(response => {
+
+      this.users.push(response);
+
+      frm.reset();
+
+    });
+
   }
 
 }
