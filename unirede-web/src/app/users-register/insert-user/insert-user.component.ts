@@ -4,7 +4,7 @@ import { FormGroup } from '@angular/forms';
 import { UserService } from '../../user.service';
 
 @Component({
-  selector: 'insert-user',
+  selector: 'delete-user',
   templateUrl: './insert-user.component.html',
   styleUrls: ['./insert-user.component.css']
 })

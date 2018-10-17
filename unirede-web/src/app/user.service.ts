@@ -18,13 +18,24 @@ export class UserService {
 
   insert(user: any){
 
-    return this.http.post(this.usersURL, user);
+    //return this.http.post(this.usersURL, user);
+
+    return this.http.post(
+      this.usersURL,
+      {user},
+      {responseType: 'text'})
 
   }
 
   update(user: any){
 
     return this.http.put(this.usersURL, user);
+
+  }
+
+  search(){
+
+    //return this.http.get<any[]>(`${this.usersURL}`);
 
   }
 

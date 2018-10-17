@@ -10,6 +10,7 @@ import { InsertUserComponent } from './insert-user/insert-user.component';
 import { UsersRoutingModule } from './users-routing.module';
 import { UsersListComponent } from '../users-list/users-list.component';
 import { UpdateUserComponent } from './update-user/update-user.component';
+import { DeleteUserComponent } from './delete-user/delete-user.component';
 
 @NgModule({
     imports: [
@@ -25,7 +26,8 @@ import { UpdateUserComponent } from './update-user/update-user.component';
         UsersRegisterComponent,
         InsertUserComponent,
         UsersListComponent,
-        UpdateUserComponent
+        UpdateUserComponent,
+        DeleteUserComponent
         
     ],
     providers: []
