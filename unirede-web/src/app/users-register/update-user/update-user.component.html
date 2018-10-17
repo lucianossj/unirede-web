@@ -1,3 +1,86 @@
-<p>
-  update-user works!
-</p>
+<div class="row" style="margin-left: 20px; margin-top: 20px">
+
+  <h5> Alterar Usuário </h5>
+
+</div>
+
+<hr>
+
+<div class="row">
+
+  <div class="col s10 offset-s1">
+
+    <form method="GET" #frm="ngForm" (ngSubmit)="searchUser(frm)">
+
+      <input name="search" id="search" type="text" class="validate" [(ngModel)]="search" required>
+      <label for="search">Que usuário deseja alterar?</label>
+
+      <button type="submit" class="btn btn-large waves-effect waves-light green" style="float: right; margin-bottom: 10px"> Pesquisar
+        <i class="material-icons right">search</i>
+      </button>
+
+    </form>
+
+  </div>
+
+</div>
+
+<div class="row">
+
+  <div class="col s10 offset-s1 card-panel">
+
+    <form method="post" #frm="ngForm" (ngSubmit)="insert(frm)">
+
+      <div class="row" style="margin-top: 20px">
+
+        <div class="input-field col s5 offset-s1">
+          <input name="login" id="login" type="text" class="validate" [(ngModel)]="user.login" required>
+          <label for="login">Login:</label>
+        </div>
+
+        <div class="input-field col s5">
+          <input name="password" id="password" type="password" class="validate" [(ngModel)]="user.password" required>
+          <label for="password">Senha:</label>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col s6 offset-s1">
+
+          <p>
+            <label>
+              <input name="permissions" type="radio" value="Administrador" [(ngModel)]="user.permission" />
+              <span style="color: black">
+                <i class="material-icons small"> business_center </i> Administrador </span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input name="permissions" type="radio" value="Usuário Interno" [(ngModel)]="user.permission" />
+              <span style="color: black">
+                <i class="material-icons small"> group </i> Usuário Interno </span>
+            </label>
+          </p>
+          <p>
+            <label>
+              <input name="permissions" type="radio" value="Cliente" [(ngModel)]="user.permission" />
+              <span style="color: black">
+                <i class="material-icons small"> face </i> Cliente </span>
+            </label>
+          </p>
+
+        </div>
+
+      </div>
+
+      <button type="submit" class="btn btn-large waves-effect waves-light green" style="float: right; margin-bottom: 10px"> Cadastrar
+        <i class="material-icons right">send</i>
+      </button>
+
+    </form>
+
+  </div>
+
+</div>

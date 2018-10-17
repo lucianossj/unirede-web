@@ -2,12 +2,14 @@ import { UsersRegisterComponent } from "./users-register.component";
 import { InsertUserComponent } from "./insert-user/insert-user.component";
 import { NgModule } from "@angular/core";
 import { RouterModule } from "@angular/router";
+import { UpdateUserComponent } from "./update-user/update-user.component";
 
 const usersRoutes = [
 
     {path: 'users-register', component: UsersRegisterComponent, children: [
 
-        {path: 'insert-user', component: InsertUserComponent}
+        {path: 'insert-user', component: InsertUserComponent},
+        {path: 'update-user', component: UpdateUserComponent}
 
     ]}
 

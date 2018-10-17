@@ -22,4 +22,10 @@ export class UserService {
 
   }
 
+  update(user: any){
+
+    return this.http.put(this.usersURL, user);
+
+  }
+
 }
