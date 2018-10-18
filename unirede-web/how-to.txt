@@ -1,0 +1,5 @@
+Para executar os projetos localmente é necessário:
+
+- Inicializar o Xampp (PHPMyAdmin) e fazer a criação do BD com o arquivo "db-unirede.sql" presente dentro
+do diretório "unirede-web" (caso o BD ainda não tenha sido criado).
+- E, via terminal, inicializar o projeto "unirede-web" utilizando o comando "ng serve".

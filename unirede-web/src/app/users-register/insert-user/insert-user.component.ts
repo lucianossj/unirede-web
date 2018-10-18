@@ -25,13 +25,13 @@ export class InsertUserComponent implements OnInit {
 
     console.log(frm.value);
 
-    this.service.insert(this.user).subscribe(response => {
+    this.service.insert(this.user)/*.subscribe(response => {
 
       this.users.push(response);
 
       frm.reset();
 
-    });
+    })*/;
 
   }
 

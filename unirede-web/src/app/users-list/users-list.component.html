@@ -4,6 +4,7 @@
 
     <tr>
 
+      <th> ID </th>
       <th> Login </th>
       <th> Permissões </th>
 
@@ -15,6 +16,7 @@
 
     <tr *ngFor="let user of users">
   
+      <td>{{user.idUser}}</td>
       <td>{{user.login}}</td>
       <td>{{user.permission}}</td>
   

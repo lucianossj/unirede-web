@@ -20,9 +20,16 @@ export class UpdateUserComponent implements OnInit {
 
   }
 
+  userLogin:string;
+
   searchUser(frm: FormGroup){
 
-    
+    this.service.search(frm).subscribe(data => this.user = data);
+
+    console.log(this.user[0]);
+
+    //this.userLogin = ;
+
   }
 
   update(frm: FormGroup){

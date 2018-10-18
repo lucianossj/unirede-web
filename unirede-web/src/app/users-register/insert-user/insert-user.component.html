@@ -13,13 +13,13 @@
       <div class="row" style="margin-top: 20px">
 
         <div class="input-field col s5 offset-s1">
-          <input name="login" id="login" type="text" class="validate"
-            [(ngModel)]="user.login" required>
+          <input name="userLogin" id="userLogin" type="text" class="validate"
+            [(ngModel)]="user.login">
           <label for="login">Login:</label>
         </div>
 
         <div class="input-field col s5">
-          <input name="password" id="password" type="password" class="validate"
+          <input name="userPassword" id="userPassword" type="password" class="validate"
             [(ngModel)]="user.password" required>
           <label for="password">Senha:</label>
         </div>
@@ -65,3 +65,5 @@
   </div>
 
 </div>
+
+<h3 *ngIf = "isAdded" >{{confirmationString}}</h3>
